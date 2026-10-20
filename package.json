@@ -1,0 +1,26 @@
+{
+  "name": "ts_ai_project",
+  "version": "1.0.0",
+  "description": "Study project: TypeScript + Claude API examples",
+  "scripts": {
+    "basic": "tsx --env-file-if-exists=.env src/01-basic.ts",
+    "chat": "tsx --env-file-if-exists=.env src/02-chat-stream.ts",
+    "tools": "tsx --env-file-if-exists=.env src/03-tools.ts",
+    "structured": "tsx --env-file-if-exists=.env src/04-structured-output.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.135.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "private": true
+}
