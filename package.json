@@ -8,6 +8,7 @@
     "tools": "tsx --env-file-if-exists=.env src/03-tools.ts",
     "structured": "tsx --env-file-if-exists=.env src/04-structured-output.ts",
     "rag": "tsx --env-file-if-exists=.env src/05-rag.ts",
+    "vercel": "tsx --env-file-if-exists=.env src/06-vercel-ai-sdk.ts",
     "typecheck": "tsc --noEmit"
   },
   "keywords": [],
@@ -15,7 +16,9 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "@ai-sdk/anthropic": "^4.0.102",
     "@anthropic-ai/sdk": "^0.135.0",
+    "ai": "^7.0.170",
     "zod": "^4.6.7"
   },
   "devDependencies": {
